@@ -1,0 +1,81 @@
+/* Aplicar reset */
+*{
+    margin: 1;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+/*Grid area*/
+.grid {
+  
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "main main main main main main"
+      "sidebar1 sidebar1 sidebar1 sidebar1 sidebar1 sidebar1"
+      "footer footer footer footer footer footer";
+    
+    @media (min-width: 500px) {
+      grid-template-columns: 150px 150px 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "sidebar1 sidebar1 main main main main"
+        "footer footer footer footer footer footer";
+    }
+  
+    @media (min-width: 992px) {
+      grid-template-columns: 150px 150px 1fr 1fr 150px 150px;
+      grid-template-areas:
+        "sidebar1 sidebar1 sidebar1 main main main "
+        "footer footer footer footer footer footer";
+    }
+  
+}
+
+
+.sidebar1 {
+  
+  grid-area: sidebar1;
+  background-color: red;
+  height: 10vh;
+  
+  @media (min-width: 500px) {
+    height: auto;
+  }
+  
+}
+/*Style login.html*/
+/*Color del texto en Login*/
+
+.bienvenido {
+  
+  grid-area: main;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  
+}
+
+/*Color del h1*/
+.bienvenido h1{
+    color: #F6765A;
+}
+
+/*Quitar el subrayado de la liga*/
+.bienvenido a{
+    text-decoration: none;
+}
+
+
+.footer {
+  color: gray;
+  grid-area: footer;
+  height: 5vh; 
+}
+
+/*Escala de la imagen de las redes sociales*/
+.socialMedia div img{
+    max-width: 3%;
+    max-height: 3%;
+}

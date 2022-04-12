@@ -1,0 +1,164 @@
+/* Aplicar reset */
+*{
+    margin: 1;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+/*Box model
+ Contenido =  texto o contenido multimedia
+ Padding = Espacio interno entre el contenido y el bode de la caja
+ Margen
+*/
+
+/*Style index.html*/
+/*Color blanco "Login" y "Carrito"*/
+#login {
+    font-size: medium;
+    color: white;
+}
+
+/*Color negro el background*/
+header{
+    background-color: black;
+    padding: 10px;
+}
+
+/* Color del menu y sin la línea del link*/
+.menu a{
+    text-decoration: none;
+    color: #F6765A;
+    font-size: large;
+}
+
+/*Color del texto*/
+.socialMedia{
+    color: lightslategray;
+}
+
+/*Escala de la imagen de las redes sociales*/
+.socialMedia div img{
+    max-width: 3%;
+    max-height: 3%;
+}
+
+/*Color del texto del footer*/
+footer{
+    color: gray;
+}
+
+/*Style de menu*/
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.element{
+    list-style: none;
+    border-style:double;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    float: left;
+    width: 160px;
+    height: 80px;
+    text-align: center;
+}
+
+/* poner el logo en centro y de color rosita */
+.mainBar a{
+    text-align: center;
+    text-decoration: none;
+    color: #F6765A;
+    font-size: large;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+
+/*Style productos.html*/
+/*Padre de productos*/
+.venta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*Elementos de venta*/
+.producto{
+    border: 5px;
+    border-color: black;
+    width: 600px;
+    height: 600px;
+    margin: 5px;
+    padding: 10px;
+}
+
+/*Configuración de las imagenes dentro del elemento proucto*/
+.producto img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+/*Style nosotros.html*/
+/*Elementos de venta*/
+.nosotros {
+    border: 5px;
+    border-color: black;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.nosotros h2{
+    text-align: center;
+}
+
+.nosotros p{
+    text-align: justify;
+}
+
+
+/*Style contacto.html*/
+.mapa {
+    width: 600px;
+    height: 800px;
+    margin: 5px;
+}
+
+.mapa img{
+    max-width: 200%;
+    max-height: 200%;
+}
+
+
+/*Style login.html*/
+/*Color del texto en Login*/
+.bienvenido{
+    background-color: black;
+    color: white;
+}
+
+/*Color del h1*/
+.bienvenido h1{
+    color: #F6765A;
+}
+
+/*Quitar el subrayado de la liga*/
+.bienvenido a{
+    text-decoration: none;
+}
